@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwiqtube Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bangers|Dancing+Script&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: lightblue;">
+    <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+    
+    <center>
+        
+        <h1 style="margin-top: 60px; font-size: 35px; font-weight: 400;">Kwiqtube<sup>
+            <img src="m2.png" style="height: 40px; width: 40px;">
+            </sup>
+        </h1> 
+        <br>
+        <br>
+        <br>
+        <h4 style=" font-family: 'Fredericka the Great', cursive !important; font-size: 22px;">Add your room name</h4>
+        <br>
+    
+        <input type="text" placeholder="#Room name" class="form-control" id="room_name" style="width: 600px;">
+        <br>
+        <br>
+        <button id="room_login_btn" onclick=save_room() class="btn btn-success">Add room</button> 
+        <br>
+        <h4 class="color_white">#TRENDINGROOMS</h4>
+		<div id="output"></div>
+
+
+    </center>
+
+</body>
